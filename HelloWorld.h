@@ -1,8 +1,0 @@
-//
-// Created by Nathan Jones on 12/17/23.
-//
-
-#ifndef CLION_PROJECTS_HELLOWORLD_H
-#define CLION_PROJECTS_HELLOWORLD_H
-
-#endif //CLION_PROJECTS_HELLOWORLD_H
