@@ -14,9 +14,9 @@ int main() {
 
     // Initialize monetary variables
     double change = (paid - amount);
-    int centsChange = static_cast<int>(round(change * 100));    // Rounds change and converts the value to an integer
-    int dollars = centsChange / 100;
-    int centsRemain = centsChange % 100;  // Amount left after dollars
+    int changeToCents = static_cast<int>(round(change * 100));    // Rounds change and converts the value to an integer
+    int dollars = changeToCents / 100;
+    int centsRemain = changeToCents % 100;  // Amount left after dollars
     int quarters = centsRemain / 25;
     centsRemain %= 25;                    // Amount of cents after quarters, assigns centsRemain to that value
     int dimes = centsRemain / 10;
