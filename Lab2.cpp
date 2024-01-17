@@ -1,3 +1,15 @@
+/*
+ * Course: CS215-004
+ * Project: Lab 2
+ * Purpose: This program directs a cashier how to give change.
+ *          The program has two inputs: the amount due and the amount received
+ *          from the customer (expressed in dollars).
+ *          The outputs displayed are dollars, dimes, nickels,
+ *          and pennies that the customer should receive in return.
+ *
+ * Author: Nathan Jones
+ */
+
 #include <iostream>
 
 using namespace std;
@@ -19,6 +31,7 @@ int main() {
     int centsRemain = changeToCents % 100;  // Amount left after dollars
     int quarters = centsRemain / 25;
     centsRemain %= 25;                    // Amount of cents after quarters, assigns centsRemain to that value
+                                          // TA Question: centsRemain = centsRemain % 25;
     int dimes = centsRemain / 10;
     centsRemain %= 10;                    // Amount of cents after dimes, assigns centsRemain to that value
     int nickels = centsRemain / 5;
