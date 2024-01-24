@@ -119,7 +119,7 @@ int main() {
             }
 
             cout << "Numbers are sorted in decreasing order: " << endl;
-            cout << firstNum << " --> " << secondNum << " --> " << thirdNum << endl;
+            cout << firstNum << " <-- " << secondNum << " <-- " << thirdNum << endl;
 
             if ((num1 == num2) || (num1 == num3) || (num2 == num3)) {            // Tests if input numbers match
                 cout << "Numbers are in leniently decreasing order!" << endl;
