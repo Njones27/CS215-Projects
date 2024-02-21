@@ -92,10 +92,8 @@ int main()
         cin >> year;
 
         // Checks validity of user input (year)
-        if (!cin.fail())
-        {
-            if ((year - START_SUPERBOWL + 1 ) >= MIN_ROMAN && ((year - START_SUPERBOWL + 1) <= MAX_ROMAN))
-            {
+        if (!cin.fail()) {
+            if ((year - START_SUPERBOWL + 1 ) >= MIN_ROMAN && ((year - START_SUPERBOWL + 1) <= MAX_ROMAN)) {
                 cout << "The time machine will bring you to the year of " << year << ":" << endl;
                 cout << "It is Super Bowl " << roman_numeral(year - START_SUPERBOWL + 1) << endl;
                 cout << "We will help you find out the result and other interesting\ninformation...next time:)" << endl;
@@ -109,15 +107,16 @@ int main()
                 cout << "Hold on!!! The year you enter is TOO BIG for Roman Numerals!" << endl;
             }
         }
-        else
-        {
+        else {
             cin.clear();
             string invalidOption;
             cin >> invalidOption;
-            if (invalidOption == "Q" || invalidOption == "q")
+            if (invalidOption == "Q" || invalidOption == "q") {
                 toQuit = true;
-            else
+            }
+            else {
                 cout << "Please use four-digit number to represent a year (1967-5965)!" << endl;
+            }
         }
         cin.ignore(numeric_limits<int>::max(), '\n'); //extra and ignore any bad input from input stream
         cout << endl;
