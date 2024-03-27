@@ -2,7 +2,7 @@
  * Course: CS215-00x
  * Project: Lab 9 (first part of Project 2)
  * Purpose: to declare the class named MathOperations
- * Author: (your name)
+ * Author: Nathan Jones
  */
 #ifndef MATHOPERATIONS_H
 #define MATHOPERATIONS_H
@@ -12,7 +12,7 @@
 
 using namespace std;
 
-const int MAXDIGITS = 4;    // the maximum digits of oper8ands or answers
+const int MAXDIGITS = 4;    // the maximum digits of operands or answers
 const string DivisionSymbol = "\u00F7";      // ASCII code for "÷"
 
 class MathOperations {

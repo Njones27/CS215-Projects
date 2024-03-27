@@ -16,7 +16,7 @@
  *         (4)num1 ? num2;
  *         if the answer is correct, a message of congratulations should be printed;
  *         if the answer is not correct, a sorry message should be printed, then followed by the correct answer.
- *Author: (your name)
+ *Author: Nathan Jones
  */
 
 #include <iostream>

@@ -110,12 +110,6 @@ int MathOperations::collectUserAnswer() const {
             cin.clear();
             cin >> check_input;
             cin.ignore(256, '\n');
-            /*if (check_input == "Q" || check_input == "q")
-                break;
-            else {
-                cout << "Invalid input, please try again..." << endl;
-                continue;
-            }*/
         }
         return input;
         }
